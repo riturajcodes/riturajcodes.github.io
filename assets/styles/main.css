@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  font-family: "Poppins", "Roboto", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  overflow-x: hidden;
+  background-color: var(--dark-black);
+}
+
+:root {
+  --dark-black: #121212;
+  --light-black: #202020;
+  --dark-white: #999;
+  --light-white: #f1f1f1;
+  --accent: #560bad;
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 110;
+  height: 100%;
+  width: 100%;
+  background-color: var(--light-black);
+  color: var(--dark-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  transition-duration: 1s;
+  font-size: 25px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: var(--light-black); */
+}
+
+.navbar__logo a {
+  font-size: 30px;
+  color: var(--light-white);
+  text-decoration: none;
+}
+
+#navToggle {
+  background-color: transparent;
+  color: var(--light-white);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px 0px;
+}
+
+header {
+  position: relative;
+}
+
+.media {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  z-index: 50;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__layer {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 55;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__title {
+  color: var(--light-white);
+  font-size: 8vw;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  cursor: default;
+}
+
+.header__subtitle {
+  font-size: 20px;
+  color: var(--light-white);
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: fit-content;
+  cursor: default;
+}
+
+.header__layer__content {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+#videoTimeline {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 150px;
+  width: 4px;
+  cursor: pointer;
+}
+
+#videoWidth {
+  width: 100%;
+  background-color: var(--light-white);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 800px) {
+  .header__title {
+    font-size: 10vw;
+  }
+  .header__subtitle {
+    font-size: 16px;
+  }
+}
