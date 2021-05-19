@@ -16,3 +16,35 @@ vidTimeline.addEventListener("click", (e) => {
 window.addEventListener("load", () => {
   document.getElementById("loader").style.transform = "translate(0%, -100%)";
 });
+
+luxy.init();
+
+const cursor = document.getElementById("cursor");
+window.addEventListener("mousemove", (e) => {
+  cursor.style.top = e.clientY + "px";
+  cursor.style.left = e.clientX + "px";
+});
+
+let allCursorPoints = document.getElementsByClassName("cursor__bg");
+
+for (let i = 0; i < allCursorPoints.length; i++) {
+  allCursorPoints[i].addEventListener("mouseover", () => {
+    cursor.style.padding = "80px";
+  });
+}
+for (let i = 0; i < allCursorPoints.length; i++) {
+  allCursorPoints[i].addEventListener("mouseout", () => {
+    cursor.style.padding = "0px";
+  });
+}
+
+const profile = document.getElementById("profile");
+const cursorText = document.getElementById("cursorText");
+
+profile.addEventListener("mousemove", () => {
+  cursorText.innerHTML = "PLAY";
+});
+
+profile.addEventListener("mouseout", () => {
+  cursorText.innerHTML = "";
+});

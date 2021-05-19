@@ -28,6 +28,26 @@ body {
   --accent: #560bad;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
 #loader {
   position: fixed;
   top: 0;
@@ -76,6 +96,9 @@ body {
 
 header {
   position: relative;
+  top: 0;
+  left: 0;
+  height: 100vh;
 }
 
 .media {
@@ -151,4 +174,108 @@ header {
   .header__subtitle {
     font-size: 16px;
   }
+}
+
+#cursor {
+  pointer-events: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  height: 10px;
+  width: 10px;
+  border: 1px solid var(--light-white);
+  z-index: 120;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+  transition-property: padding;
+  transition-duration: 0.3s;
+}
+
+@media only screen and (max-width: 600px) {
+  #cursor {
+    display: none;
+  }
+}
+
+#about {
+  color: var(--light-white);
+  padding: 100px 10px;
+  cursor: default;
+}
+
+.about__inner {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about__inner p {
+  width: 400px;
+  max-width: 95%;
+  margin: 50px 0px;
+}
+
+#about h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.about__inner img {
+  max-width: 95%;
+}
+
+.about__inner a {
+  display: inline-block;
+  padding: 15px 70px;
+  background-color: var(--accent);
+  margin: 20px 0px;
+  color: var(--light-white);
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 40px;
+}
+
+.footer {
+  padding: 100px 0px;
+  width: 100%;
+  background-color: var(--light-black);
+}
+
+.footer__inner {
+  width: 80%;
+  margin: auto;
+}
+
+.footer__header {
+  font-size: 40px;
+  color: var(--light-white);
+}
+
+.email {
+  color: var(--light-white);
+  display: inline-block;
+  margin: 20px 0px;
+  text-decoration: none;
+}
+
+.socials {
+  margin-top: 40px;
+}
+
+.socials a {
+  color: var(--light-white);
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 0px;
+}
+
+#profile {
+  cursor: none;
+}
+
+#cursorText {
+  color: var(--light-white);
+  font-weight: 600;
+  transform: translate(-300%, -50%);
 }

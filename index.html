@@ -60,34 +60,88 @@
         </div>
       </center>
     </div>
+
+    <div id="cursor">
+      <div id="cursorText"></div>
+    </div>
+
     <nav class="navbar">
       <div class="navbar__logo">
-        <a title="rituraj codes" href="index.html">RD</a>
+        <a class="cursor__bg" title="rituraj codes" href="index.html">RD</a>
       </div>
-      <div class="navbar__menu">
+      <div class="navbar__menu cursor__bg">
         <button id="navToggle">MENU</button>
       </div>
     </nav>
-    <header>
-      <div class="header__layer">
-        <div class="header__layer__content">
-          <h1 class="header__title">RITURAJ CODES</h1>
-          <p class="header__subtitle">Web Developer, Magician, Painter</p>
-          <div id="videoTimeline">
-            <div id="videoWidth"></div>
+    <div id="luxy">
+      <header>
+        <div class="header__layer">
+          <div class="header__layer__content">
+            <h1 class="header__title cursor__bg">RITURAJ CODES</h1>
+            <p class="header__subtitle">Web Developer, Magician, Painter</p>
+            <div id="videoTimeline">
+              <div id="videoWidth"></div>
+            </div>
           </div>
         </div>
-      </div>
-      <video
-        id="headerVideo"
-        class="media"
-        src="assets/videos/header-background.mp4"
-        muted
-        autoplay
-        loop
-      ></video>
-    </header>
+        <video
+          id="headerVideo"
+          class="media"
+          src="assets/videos/header-background.mp4"
+          muted
+          autoplay
+          loop
+        ></video>
+      </header>
+      <main>
+        <section id="about">
+          <center>
+            <h2>About</h2>
+          </center>
+          <div class="about__inner">
+            <p>
+              Rituraj Codes is a pro Front - End Web Developer based in India.
+              He creates top of the line websites and awesome UI and UX designs.
+              His websites are crafted with so much precision that it fits
+              perfectly to every screen.
+              <br />
+              <a class="cursor__bg" href="#">DISCOVER</a>
+            </p>
+            <img
+              id="profile"
+              class="cursor__bg"
+              src="assets/images/profile.jpg"
+              alt=""
+            />
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer__inner">
+          <div class="footer__header">
+            Let's Work <br />
+            Together
+          </div>
+          <a href="mailto:riturajcodes@gmail.com" class="email cursor__bg"
+            >riturajcodes@gmail.com</a
+          >
+          <div class="socials">
+            <div class="footer__header">Social Media Presence</div>
+            <a class="cursor__bg" href="https://www.instagram.com/riturajcodes/"
+              >INSTAGRAM</a
+            >
+            <br />
+            <a
+              class="cursor__bg"
+              href="https://www.youtube.com/channel/UCRBVavFBh4HpxbNCNgpMBXA"
+              >YOUTUBE</a
+            >
+          </div>
+        </div>
+      </footer>
+    </div>
     <!-- ============================================== -->
+    <script src="assets/scripts/vendors/luxy.js"></script>
     <script src="assets/scripts/app.js"></script>
     <!-- ============================================== -->
   </body>
