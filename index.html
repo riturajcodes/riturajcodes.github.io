@@ -1,159 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!-- 
-        Rituraj Codes 2021
-     -->
-  <head>
+
+<head>
     <!-- ============================================== -->
-    <meta charset="UTF-8" />
-    <meta name="description" content="The official website of Rituraj Codes" />
-    <meta
-      name="keywords"
-      content="riturajcodes, riturajdatta, code, rituraj, coding, programming, programmer, web developer, magician"
-    />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#121212" />
-    <meta name="author" content="Rituraj Datta" />
-    <meta name="robots" content="index, follow" />
+    <meta charset="UTF-8">
+    <meta name="description" content="Rituraj Codes Official Site">
+    <meta name="keywords" content="riturajcodes, rituraj_codes, Rituraj Datta">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="author" content="Rituraj Datta">
+    <meta name="robots" content="index, follow">
     <!-- ============================================== -->
+    <meta property="og:url" content="https://riturajcodes.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rituraj Codes">
+    <meta property="og:description" content="Rituraj Codes Official Site">
+    <meta property="og:image" content="">
     <!-- ============================================== -->
-    <meta property="og:url" content="https://riturajcodes.github.io" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Rituraj Codes" />
-    <meta
-      property="og:description"
-      content="The official website of Rituraj Codes"
-    />
-    <meta property="og:image" content="" />
-    <!-- ============================================== -->
-    <!-- ============================================== -->
-    <link rel="stylesheet" href="assets/styles/main.css" />
-    <!-- <link rel="shortcut icon" href="" type="image/x-icon" /> -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="assets/images/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="assets/images/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="assets/images/favicon-16x16.png"
-    />
-    <link rel="manifest" href="assets/images/site.webmanifest" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- ============================================== -->
     <title>Rituraj Codes</title>
-  </head>
-  <body>
-    <div id="loader">
-      <center>
-        <div id="loaderText">
-          PREPARING THE PAGE FOR YOU <br />
-          HANG ON ...
-        </div>
-      </center>
-    </div>
+</head>
 
-    <div id="cursor">
-      <div id="cursorText"></div>
-    </div>
-
+<body>
+    <!-- ============================================== -->
     <nav class="navbar">
-      <div class="navbar__logo">
-        <a class="cursor__bg" title="rituraj codes" href="index.html">RD</a>
-      </div>
-      <div class="navbar__menu cursor__bg">
-        <button id="navToggle">MENU</button>
-      </div>
-    </nav>
-    <div id="luxy">
-      <header>
-        <div class="header__layer">
-          <div class="header__layer__content">
-            <h1 class="header__title cursor__bg">RITURAJ CODES</h1>
-            <p class="header__subtitle">Web Developer, Magician, Painter</p>
-            <div id="videoTimeline">
-              <div id="videoWidth"></div>
+        <div class="navbar_container">
+            <a href="/" class="logo">RC</a>
+            <div class="navbar_links_left">
+                <ul>
+                    <li>
+                        <a href="/">Home</a>
+                    </li>
+                    <li>
+                        <a href="/">About</a>
+                    </li>
+                    <li>
+                        <a href="/">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="/">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </div>
+            <div class="navbar_links_right">
+                <ul>
+                    <li>
+                        <a href="/">WORKS</a>
+                    </li>
+                    <li>
+                        <button>MENU</button>
+                    </li>
+                    <li>
+                        <button>
+                            <i class='bx bx-qr'></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <video
-          id="headerVideo"
-          class="media"
-          src="assets/videos/header-background.mp4"
-          muted
-          autoplay
-          loop
-        ></video>
-      </header>
-      <main>
-        <section id="about">
-          <center>
-            <h2>About</h2>
-          </center>
-          <div class="about__inner">
-            <p>
-              Rituraj Codes is a pro Front - End Web Developer based in India.
-              He creates top of the line websites and awesome UI and UX designs.
-              His websites are crafted with so much precision that it fits
-              perfectly to every screen.
-              <br />
-              <a class="cursor__bg" href="#">DISCOVER</a>
-            </p>
-            <img
-              id="profile"
-              class="cursor__bg"
-              src="assets/images/profile.jpg"
-              alt=""
-            />
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__inner">
-          <div class="footer__header">
-            Let's Work <br />
-            Together
-          </div>
-          <a href="mailto:riturajcodes@gmail.com" class="email cursor__bg"
-            >riturajcodes@gmail.com</a
-          >
-          <div class="socials">
-            <div class="footer__header">Social Media Presence</div>
-            <a
-              class="cursor__bg"
-              target="_blank"
-              href="https://www.instagram.com/riturajcodes/"
-              >INSTAGRAM</a
-            >
-            <br />
-            <a
-              class="cursor__bg"
-              target="_blank"
-              href="https://www.youtube.com/channel/UCRBVavFBh4HpxbNCNgpMBXA"
-              >YOUTUBE</a
-            >
-            <br />
-            <a
-              class="cursor__bg"
-              target="_blank"
-              href="https://github.com/riturajcodes"
-              >GITHUB</a
-            >
-          </div>
+    </nav>
+    <header class="header">
+        <video src="./header-video.mp4" muted loop autoplay></video>
+        <div class="header_text">
+            <div class="header_text_container">
+                <h1>RITURAJ CODES</h1>
+                <div class="header_text_bottom">
+                    <h2>
+                        My story isn’t usual but it is not extra-ordinary. It is just different.
+                    </h2>
+                    <p>
+                        A visionary 17-year-old from India, embarked on a dynamic journey as a student, web developer,
+                        and budding entrepreneur.
+                        With a passion for technology and a relentless drive, he harnessed his skills to create
+                        innovative web solutions.
+                        Rituraj's story is a testament to youthful ambition, resilience, and the boundless possibilities
+                        that unfold when talent
+                        meets determination in the vibrant landscape of life.
+                    </p>
+                </div>
+            </div>
         </div>
-      </footer>
+    </header>
+    <div class="favourite_song">
+        <a href="https://www.youtube.com/watch?v=-YTgFUNwRKk" target="_blank" class="favourite_song_cd">
+            <div class="favourite_song_cd_inner">
+                <i class='bx bx-music'></i>
+            </div>
+        </a>
+        <!-- <small>Click to listen my current favourite song</small> -->
     </div>
     <!-- ============================================== -->
-    <script src="assets/scripts/vendors/luxy.js"></script>
-    <script src="assets/scripts/app.js"></script>
-    <!-- ============================================== -->
-  </body>
+</body>
+
 </html>
