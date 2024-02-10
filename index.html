@@ -31,6 +31,12 @@
 </head>
 
 <body>
+    <div class="loader" id="loader">
+        <div class="loader_inner" id="loader_inner">
+            <p>RC</p>
+        </div>
+    </div>
+    <div id="top"></div>
     <!-- ============================================== -->
     <nav class="navbar">
         <div class="navbar_container">
@@ -38,23 +44,23 @@
             <div class="navbar_links_left">
                 <ul>
                     <li>
-                        <a href="/">Home</a>
+                        <a href="#top">Home</a>
                     </li>
                     <li>
-                        <a href="/">About</a>
+                        <a href="#socials">Socials</a>
                     </li>
                     <li>
-                        <a href="/">Blogs</a>
+                        <a href="#blogs">Blogs</a>
                     </li>
                     <li>
-                        <a href="/">Contact</a>
+                        <a href="#works">Works</a>
                     </li>
                 </ul>
             </div>
             <div class="navbar_links_right">
                 <ul>
                     <li>
-                        <a href="/">WORKS</a>
+                        <a href="#contact">Get In Touch</a>
                     </li>
                     <li>
                         <button>MENU</button>
@@ -91,6 +97,18 @@
         </div>
     </header>
     <!-- ============================================== -->
+    <script>
+        try {
+            const loader = document.getElementById("loader")
+            const loader_inner = document.getElementById("loader_inner")
+            document.addEventListener("DOMContentLoaded", () => {
+                loader.classList.add("loader_animate")
+                loader_inner.classList.add("loader_inner_animate")
+            })
+        } catch (err) {
+            console.log(err);
+        }
+    </script>
 </body>
 
 </html>

@@ -5,6 +5,7 @@
   font-family: "Satoshi";
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
 :root {
   --text-primary: #fff;
@@ -175,5 +176,65 @@ body {
   .header_text_bottom p,
   .header_text_bottom h2 {
     margin-top: 25px;
+  }
+}
+.loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500vw;
+  height: 500vw;
+  border-radius: 50%;
+  background-color: var(--text-primary);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader_animate {
+  animation-name: loader;
+  animation-duration: 0.8s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+.loader_inner {
+  width: 500vw;
+  height: 500vw;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader_inner_animate {
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.loader_inner p {
+  font-weight: 600;
+  animation-name: blinker;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  font-family: "Clash Display";
+}
+@keyframes blinker {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes loader {
+  100% {
+    width: 0%;
+    height: 0%;
+    display: none;
+    pointer-events: none;
   }
 }
