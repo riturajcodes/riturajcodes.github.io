@@ -67,7 +67,7 @@
                     </li>
                     <li>
                         <button>
-                            <i class='bx bx-qr'></i>
+                            <i class="bx bx-qr pointing"></i>
                         </button>
                     </li>
                 </ul>
@@ -105,6 +105,30 @@
                 loader.classList.add("loader_animate")
                 loader_inner.classList.add("loader_inner_animate")
             })
+
+            const allLinks = document.getElementsByTagName("a")
+            for (let i = 0; i < allLinks.length; i++) {
+                allLinks[i].classList.add("pointing")
+            }
+            const allBtns = document.getElementsByTagName("button")
+            for (let i = 0; i < allBtns.length; i++) {
+                allBtns[i].classList.add("pointing")
+            }
+            let allTxts = [];
+            allTxts.push(document.getElementsByTagName("h1"));
+            allTxts.push(document.getElementsByTagName("h2"));
+            allTxts.push(document.getElementsByTagName("h3"));
+            allTxts.push(document.getElementsByTagName("p"));
+            allTxts.push(document.getElementsByTagName("small"));
+            allTxts.push(document.getElementsByTagName("span"));
+
+            for (let i = 0; i < allTxts.length; i++) {
+                let elements = allTxts[i];
+                for (let j = 0; j < elements.length; j++) {
+                    elements[j].classList.add("beam");
+                }
+            }
+
         } catch (err) {
             console.log(err);
         }

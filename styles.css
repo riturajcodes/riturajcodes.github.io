@@ -6,6 +6,13 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-tap-highlight-color: transparent;
   scroll-behavior: smooth;
+  cursor: url("cursor.png"), auto;
+}
+.pointing {
+  cursor: url("pointing.png"), auto !important;
+}
+.beam {
+  cursor: url("beam.png"), auto !important;
 }
 :root {
   --text-primary: #fff;
