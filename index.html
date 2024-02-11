@@ -142,9 +142,89 @@
                         <h3>40k+</h3>
                     </div>
                 </div>
+                <div class="social_left_qoute">
+                    "Your business is not just a venture; it's a reflection of your dedication, resilience, and
+                    unwavering belief in your
+                    dreams."
+                </div>
             </div>
             <div class="socials_right">
-                Coming Soon
+                <div class="socials_right_skills">
+                    <p>Web Development</p>
+                    <p>Magic</p>
+                    <p>Painting</p>
+                    <p>Business Management</p>
+                    <p>Cycling</p>
+                    <p>Music</p>
+                    <p>UI/UX Design</p>
+                </div>
+                <div class="socials_right_desktop">
+                    <div class="socials_right_desktop_topstrip">
+                        <p class="socials_right_desktop_topstrip_logo">
+                            RC
+                        </p>
+                        <div class="socials_right_desktop_topstrip_right">
+                            <div id="localTimeDate" class="localTimeDate"></div>
+                            <div id="localTimeTime" class="localTimeTime">
+                            </div>
+                            <div class="socials_right_desktop_topstrip_right_icons">
+                                <i class='bx bx-signal-5'></i>
+                                <i class='bx bx-wifi'></i>
+                                <i class='bx bxs-battery-charging'></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="socials_right_desktop_home">
+                        <div class="socials_right_desktop_home_screen">
+                            <div class="window">
+                                <div class="window_circles">
+                                    <div class="window_circle"></div>
+                                    <div class="window_circle"></div>
+                                    <div class="window_circle"></div>
+                                </div>
+                                <img src="screen1.png">
+                            </div>
+                            <div class="window">
+                                <div class="window_circles">
+                                    <div class="window_circle"></div>
+                                    <div class="window_circle"></div>
+                                    <div class="window_circle"></div>
+                                </div>
+                                <img src="screen2.png">
+                            </div>
+                            <div class="window">
+                                <div class="window_circles">
+                                    <div class="window_circle"></div>
+                                    <div class="window_circle"></div>
+                                    <div class="window_circle"></div>
+                                </div>
+                                <img src="screen3.png">
+                            </div>
+                        </div>
+                        <div class="socials_right_desktop_home_dock">
+                            <a target="_blank" href="https://www.instagram.com/rituraj_codes/">
+                                <img class="pointing" src="instagram.png">
+                                <!-- <span>Instagram</span> -->
+                            </a>
+                            <a href="#">
+                                <img class="pointing" src="twitter.png">
+                                <!-- <span>X</span> -->
+                            </a>
+                            <a href="#">
+                                <img class="pointing" src="GitHub.png">
+                                <!-- <span>GitHub</span> -->
+                            </a>
+                            <a href="#">
+                                <img class="pointing" src="LinkedIn.png">
+                                <!-- <span>Linked In</span> -->
+                            </a>
+                            <a href="#">
+                                <img class="pointing" src="Discord.png">
+                                <!-- <span>Discord</span> -->
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -184,6 +264,29 @@
         } catch (err) {
             console.log(err);
         }
+
+        function updateLocalTime() {
+            const localTime = new Date();
+
+            const options = {
+                weekday: 'long',
+                month: 'long',
+                day: 'numeric',
+                hour: 'numeric',
+                minute: 'numeric',
+                hour12: true
+            };
+
+            const formattedTime = localTime.toLocaleString('en-IN', options).split(" at ");
+
+            const date = formattedTime[0]
+            const time = formattedTime[1]
+
+            document.getElementById('localTimeTime').textContent = time;
+            document.getElementById('localTimeDate').textContent = date;
+        }
+        updateLocalTime();
+        setInterval(updateLocalTime, 1000);
     </script>
 </body>
 
