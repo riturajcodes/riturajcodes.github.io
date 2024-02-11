@@ -486,9 +486,13 @@ body {
   gap: 5px;
   font-size: 12px;
   font-weight: 600;
+  transition-duration: 0.2s;
 }
 .socials_right_desktop_home_dock img {
   height: 35px;
+}
+.socials_right_desktop_home_dock a:hover {
+  transform: scale(1.2);
 }
 .socials_right_desktop_home_screen {
   flex: 1;
