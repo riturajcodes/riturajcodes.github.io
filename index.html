@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ============================================== -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Rituraj Codes Official Site">
+    <meta name="keywords" content="riturajcodes, rituraj_codes, Rituraj Datta">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000">
+    <meta name="author" content="Rituraj Datta">
+    <meta name="robots" content="index, follow">
+    <!-- ============================================== -->
+    <meta property="og:url" content="https://riturajcodes.github.io/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rituraj Codes">
+    <meta property="og:description" content="Rituraj Codes Official Site">
+    <meta property="og:image" content="">
+    <!-- ============================================== -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+
+    <link href="https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,500,600,1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- ============================================== -->
+    <title>Rituraj Codes</title>
+</head>
+
+<body>
+    <div class="loader" id="loader">
+        <div class="loader_inner" id="loader_inner">
+            <p>RC</p>
+        </div>
+    </div>
+    <div id="top"></div>
+    <!-- ============================================== -->
+
+    <nav class="navbar">
+        <div class="navbar_container">
+            <a href="/" class="logo">RC</a>
+            <div class="navbar_links_left">
+                <ul>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#socials">Socials</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                </ul>
+            </div>
+            <div class="navbar_links_right">
+                <ul>
+                    <li><a href="#contact">Get In Touch</a></li>
+                    <li>
+                        <button id="navbarMenuBtn" aria-label="Open menu">
+                            <i class="bx bx-menu"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="navbar_overlay" id="navbarOverlay" aria-hidden="true">
+        <button class="navbar_close" id="navbarClose" aria-label="Close menu">&times;</button>
+        <ul>
+            <li><a onclick="closeMenu()" href="#top">Home</a></li>
+            <li><a onclick="closeMenu()" href="#blog">Blog</a></li>
+            <li><a onclick="closeMenu()" href="#socials">Socials</a></li>
+            <li><a onclick="closeMenu()" href="#timeline">Timeline</a></li>
+            <li><a onclick="closeMenu()" href="#contact">Get In Touch</a></li>
+        </ul>
+    </div>
+    <header class="header">
+        <video src="header-video.mp4" muted loop autoplay></video>
+        <div class="header_text">
+            <div class="header_text_container">
+                <h1>RITURAJ CODES</h1>
+                <div class="header_text_bottom">
+                    <h2>
+                        My story isn’t usual but it is not extra-ordinary. It is just different.
+                    </h2>
+                    <div class="header_text_bottom_right">
+                        <p>A visionary 19-year-old from India, embarked on a dynamic journey as a student, designer,
+                            software developer, and budding entrepreneur. With a passion for technology and a relentless
+                            drive, he harnessed his skills to create innovative solutions.
+                        </p>
+                        <div class="header_text_bottom_right_box">
+                            <div class="header_text_bottom_right_box_elem">
+                                <i class='bx bx-line-chart'></i>
+                                Entrepreneur
+                            </div>
+                            <div class="header_text_bottom_right_box_elem">
+                                <i class='bx bx-code-alt'></i>
+                                Software Developer
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="blog" class="blog-list">
+            <div class="blog-header">
+                <span class="date-label">date</span>
+                <span class="title-label">title</span>
+            </div>
+
+            <a href="./blog/indias-data-renaissance.html" class="blog-item pointing">
+                <span class="date">October 1, 2025</span>
+                <div class="details">
+                    <h3 class="title pointing">India’s Data Renaissance</h3>
+                    <span class="meta pointing">4 min read</span>
+                </div>
+            </a>
+        </section>
+        <section class="socials" id="socials">
+            <div class="social_left">
+                <div class="socials_left_email_container">
+                    <div class="socials_left_email">
+                        <p class="socials_left_email_top">
+                            I am just —
+                            <br>
+                            An Email Away
+                        </p>
+                        <div class="socials_left_email_bottom">
+                            <a href="mailto:riturajcodes@gmail.com">
+                                Email Me
+                            </a>
+                            <p>Let's create
+                                <br>
+                                something together
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="social_left_stats">
+                    <p class="social_left_stats_top">
+                        Stats
+                    </p>
+                    <div class="social_left_stats_bottom">
+                        <p>
+                            <b>Total Customers</b>
+                            <br>
+                            <span>Across all apps</span>
+                        </p>
+                        <h3>40k+</h3>
+                    </div>
+                </div>
+                <div class="social_left_qoute">
+                    "Your business is not just a venture; it's a reflection of your dedication, resilience, and
+                    unwavering belief in your
+                    dreams."
+                </div>
+            </div>
+            <div class="socials_right">
+                <div class="socials_right_skills" id="socials_right_skills">
+                    <p>Software Development 🧑‍💻</p>
+                    <p>Magic 🪄</p>
+                    <p>Painting 🖌️</p>
+                    <p>Business Management 🧑‍💼</p>
+                    <p>Cycling 🚴</p>
+                    <p>Music 🎸</p>
+                    <p>UI/UX Design 🖼️</p>
+                </div>
+                <div class="socials_right_boxsocials">
+                    <div class="socials_right_boxsocials_top">
+                        <a target="_blank" href="https://www.instagram.com/rituraj_codes/" class="box">
+                            <img src="/images/instagram.png">
+                            <div class="text">
+                                <h4>Instagram</h4>
+                                <p>
+                                    21 Posts 15k
+                                </p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://twitter.com/CodesRituraj" class="box">
+                            <img src="/images/twitter.png">
+                            <div class="text">
+                                <h4>X</h4>
+                                <p>
+                                    1 Tweet
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="socials_right_boxsocials_middle">
+                        <a target="_blank" href="https://github.com/riturajcodes" class="box">
+                            <img src="/images/github.png">
+                            <div class="text">
+                                <h4>GitHub</h4>
+                                <p>
+                                    Where Code Lives
+                                </p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://music.youtube.com/watch?v=3zf6Vyi7fS0&si=UheV3Sa7L41ypB7k"
+                            class="box">
+                            <img src="/images/ytmusic.png">
+                            <div class="text">
+                                <h4>Music</h4>
+                                <p>
+                                    Listen Favourite Song
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="socials_right_boxsocials_bottom">
+                        <a target="_blank" href="https://www.linkedin.com/in/riturajcodes/" class="box">
+                            <img src="/images/linkedin.png">
+                            <div class="text">
+                                <h4>Linked In</h4>
+                                <p>
+                                    Connect with Me
+                                </p>
+                            </div>
+                        </a>
+                        <a target="_blank" href="https://discord.com/invite/7X4UyT8C" class="box">
+                            <img src="/images/discord.png">
+                            <div class="text">
+                                <h4>Discord</h4>
+                                <p>
+                                    Join the Party
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+        </section>
+
+        <section id="timeline" class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-date">2025 – Present</div>
+                <div class="timeline-content">
+                    <h3>Building India’s Next-Generation Data Analytics System</h3>
+                    <p>
+                        Currently leading the development of a <strong>unified data analytics system</strong> designed
+                        to
+                        revolutionize how Indian enterprises, startups, and public institutions
+                        process and collaborate on large-scale data.
+                    </p>
+                    <ul>
+                        <li>Building a <strong>secure, scalable, and real-time data infrastructure</strong> capable of
+                            handling massive datasets efficiently.</li>
+                        <li>Integrating <strong>AI-driven insights</strong> for intelligent data interpretation and
+                            automation using <strong>Digital Twins</strong>.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-date">2023 – Present</div>
+                <div class="timeline-content">
+                    <img src="/images/xlen-logo.png" alt="Xlen logo" />
+                    <h3>CEO & Co-Founder of <a href="https://xlen.vercel.app/" target="_blank">Xlen</a></h3>
+                    <p>
+                        Founded <strong>Xlen</strong>, a full-stack digital transformation and analytics agency focused
+                        on helping
+                        businesses modernize their systems, scale sustainably, and make data-driven decisions.
+                        As CEO, I oversee operations across technology, analytics, and marketing divisions.
+                    </p>
+                    <ul>
+                        <li><strong>Digital Transformation:</strong> Migrated legacy systems to scalable cloud
+                            infrastructures.</li>
+                        <li><strong>AI & Analytics Consulting:</strong> Delivered managed analytics, process
+                            optimization, and automation solutions.</li>
+                        <li><strong>Software Development:</strong> Built end-to-end web, mobile, and API platforms for
+                            clients across industries.</li>
+                        <li><strong>Marketing Strategy:</strong> Managed SEO, branding, and digital outreach for
+                            emerging startups and SMEs.</li>
+                    </ul>
+                    <p>
+                        Xlen’s mission is to combine <strong>engineering precision</strong> with <strong>marketing
+                            intelligence</strong> to help clients grow
+                        in the modern digital economy.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="timeline-item">
+                <div class="timeline-date">2021 – 2023</div>
+                <div class="timeline-content">
+                    <img src="/images/weatherdbi-logo.png" alt="weatherDB Logo" />
+                    <h3>Founded <a href="https://github.com/DB-db-dron/weatherDB" target="_blank">weatherDB</a></h3>
+                    <p>
+                        Co-founded <strong>weatherDB</strong>, an open and developer-friendly weather data API built to
+                        deliver
+                        <strong>real-time forecasts, hourly updates, and 7-day predictions</strong> with no
+                        authentication barrier.
+                        The platform rapidly scaled to <strong>11,000+ recurring users</strong> worldwide, including
+                        integrations used by a few <strong>government agencies</strong>.
+                    </p>
+                    <ul>
+                        <li>Delivered highly optimized endpoints for instant weather, forecasts, and visual icon data.
+                        </li>
+                        <li>Served as a free, public weather API alternative to OpenWeather and AccuWeather.</li>
+                        <li>Recognized and <strong>featured among the top weather SaaS APIs</strong> globally.</li>
+                        <li>Built with performance-focused caching, Node.js, and modern REST design principles.</li>
+                    </ul>
+                    <p>
+                        The project’s goal was to democratize access to weather data for developers, startups, and
+                        public-interest initiatives.
+                    </p>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="contact">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <img src="/images/profilephoto.jpg" alt="Rituraj Codes">
+                    <p>Rituraj</p>
+                </div>
+                <div class="chat-messages" id="chat"></div>
+                <div class="chat-input">
+                    <input id="userInput" type="text" placeholder="Type here..." disabled />
+                    <button id="sendBtn" disabled>Send</button>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <footer class="footer">
+        <div class="footer_container">
+            <p>&copy; 2025 Rituraj Datta. All rights reserved.</p>
+            <p>Unauthorized duplication or publication of any materials from this site is expressly prohibited.</p>
+        </div>
+    </footer>
+
+    <!-- ============================================== -->
+    <script>
+        try {
+            const loader = document.getElementById("loader")
+            const loader_inner = document.getElementById("loader_inner")
+            document.addEventListener("DOMContentLoaded", () => {
+                loader.classList.add("loader_animate")
+                loader_inner.classList.add("loader_inner_animate")
+            })
+
+            const allLinks = document.getElementsByTagName("a")
+            for (let i = 0; i < allLinks.length; i++) {
+                allLinks[i].classList.add("pointing")
+            }
+            const allBtns = document.getElementsByTagName("button")
+            for (let i = 0; i < allBtns.length; i++) {
+                allBtns[i].classList.add("pointing")
+            }
+            let allTxts = [];
+            allTxts.push(document.getElementsByTagName("h1"));
+            allTxts.push(document.getElementsByTagName("h2"));
+            allTxts.push(document.getElementsByTagName("h3"));
+            allTxts.push(document.getElementsByTagName("p"));
+            allTxts.push(document.getElementsByTagName("small"));
+            allTxts.push(document.getElementsByTagName("span"));
+            allTxts.push(document.getElementsByTagName("input"));
+
+            for (let i = 0; i < allTxts.length; i++) {
+                let elements = allTxts[i];
+                for (let j = 0; j < elements.length; j++) {
+                    elements[j].classList.add("beam");
+                }
+            }
+
+        } catch (err) {
+            console.log(err);
+        }
+
+        const chat = document.getElementById('chat');
+        const input = document.getElementById('userInput');
+        const sendBtn = document.getElementById('sendBtn');
+
+        const conversation = [
+            { type: 'bot', text: "Hey there 👋 What's your name?" },
+            { type: 'bot', text: "Nice to meet you! What's your email or phone number?" },
+            { type: 'bot', text: "Got it. Now, what would you like to say?" },
+            { type: 'bot', text: "Thanks! Your message has been received. We'll get back to you soon 🙌" }
+        ];
+
+        let step = 0;
+        let userData = {};
+
+        function addMessage(text, sender) {
+            const msg = document.createElement('div');
+            msg.classList.add('message', sender);
+            msg.textContent = text;
+            chat.appendChild(msg);
+        }
+
+        function showTyping() {
+            const typing = document.createElement('div');
+            typing.classList.add('message', 'bot', 'typing');
+            typing.innerHTML = `<span class="dot"></span><span class="dot"></span><span class="dot"></span>`;
+            chat.appendChild(typing);
+            return typing;
+        }
+
+        function botAsk(question, delay = 1000) {
+            const typing = showTyping();
+
+            setTimeout(() => {
+                typing.remove();
+                addMessage(question, 'bot');
+                enableInput();
+            }, delay);
+        }
+
+        function disableInput() {
+            input.disabled = true;
+            sendBtn.disabled = true;
+        }
+
+        function enableInput() {
+            input.disabled = false;
+            sendBtn.disabled = false;
+        }
+
+        sendBtn.addEventListener('click', () => {
+            const text = input.value.trim();
+            if (!text) return;
+
+            addMessage(text, 'user');
+            disableInput();
+            input.value = '';
+
+            if (step === 0) {
+                userData.name = text;
+                botAsk(conversation[1].text);
+            } else if (step === 1) {
+                userData.contact = text;
+                botAsk(conversation[2].text);
+            } else if (step === 2) {
+                userData.message = text;
+                botAsk(conversation[3].text);
+                console.log("Form submission:", userData);
+            }
+            step++;
+        });
+
+        botAsk(conversation[0].text, 700);
+
+        const navbarMenuBtn = document.getElementById('navbarMenuBtn');
+        const navbarOverlay = document.getElementById('navbarOverlay');
+        const navbarClose = document.getElementById('navbarClose');
+
+        function openMenu() {
+            navbarOverlay.classList.add('open');
+            navbarOverlay.setAttribute('aria-hidden', 'false');
+            document.documentElement.style.overflow = 'hidden';
+        }
+
+        function closeMenu() {
+            navbarOverlay.classList.remove('open');
+            navbarOverlay.setAttribute('aria-hidden', 'true');
+            document.documentElement.style.overflow = '';
+        }
+
+        navbarMenuBtn.addEventListener('click', openMenu);
+        navbarClose.addEventListener('click', closeMenu);
+        navbarOverlay.addEventListener('click', (e) => {
+            if (e.target === navbarOverlay) closeMenu();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeMenu();
+        });
+    </script>
+</body>
+
+</html>
